@@ -32,23 +32,23 @@
 	left:100px; top:400px;
 	width: 200px; height: 147px;
 	position: absolute;
-	-webkit-animation-name: nemo;
+	-webkit-animation-name: Nemo;
 	-webkit-animation-duration: 20s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: running;	
 	-webkit-transform:scaleX(1)
 }
-@-webkit-keyframes nemo
+@-webkit-keyframes Nemo
 {
-	0%   {left:200px; top:200px; transform:scaleX(1);}  /* Start position lowered */
-    15%  {left:300px; top:220px; transform:scaleX(1) rotate(2deg);}  /* Increased starting movement, minimal turn */
-    30%  {left:450px; top:200px; transform:scaleX(1) rotate(2deg);}  /* Reduced horizontal distance, minimal turn */
-    45%  {left:500px; top:210px; transform:scaleX(1) rotate(2deg);}  /* Slight vertical movement, minimal turn */
-    60%  {left:600px; top:180px; transform:scaleX(1) rotate(2deg);}
-    75%  {left:650px; top:200px; transform:scaleX(1) rotate(2deg);}  /* Slight vertical movement, minimal turn */
-    90%  {left:400px; top:220px; transform:scaleX(1) rotate(2deg);}  /* Reduced horizontal distance, minimal turn */
-    100% {left:200px; top:200px; transform:scaleX(1);}  /* Returned to starting position with slight vertical shift */
+	0%   {left:200px; top:200px;}  
+    15%  {left:300px; top:220px;}  
+    30%  {left:450px; top:200px;}  
+    45%  {left:500px; top:210px;} 
+    60%  {left:600px; top:180px;}
+    75%  {left:650px; top:200px;}  
+    90%  {left:400px; top:220px;} 
+    100% {left:200px; top:200px;} 
 }
 #purple
 {
@@ -67,7 +67,8 @@
 	0% {left: 100%; top: 100px;  transform:scaleX(-1)}
 	5% {Left: 70%; top: 100px; transform:scaleX(-1) rotate(2deg);}
 	10%{left: 80%; top:100px; transform:scaleX(-1) rotate(2deg);}
-    100% {left: -100px; top: 100px; transform:scaleX(-1)rotate(2deg);}
+    100%{left: -100px; top: 100px; transform:scaleX(-1) rotate(2deg);}
+}
 #golden
 {
 	left:100px; top:400px;
@@ -112,10 +113,10 @@
 
 	</style>
 </head>
-<body>
-
-<div style="background-image:url(https://i.pinimg.com/736x/6f/e6/c2/6fe6c2983f5c5ed32a3948be50d6a26c.jpg); background-size: cover; width: 100%; height: 100%;  background-position: center;
+<body style="background-image:url(https://www.desktopbackground.org/download/1600x900/2012/09/21/456167_25-aquarium-backgrounds_2560x1024_h.jpg); background-size: cover; height: 100%;
 background-repeat: no-repeat;">
+
+<div>
 
     <div id="shark"><img src="https://art.ngfiles.com/comments/245000/iu_245073_5714699.gif"; width="298" height="149"></div>
 	<div id="nemo"><img src="https://media.baamboozle.com/uploads/images/73330/1668605781_17770_gif-url.gif"; width="298" height="149"></div>
