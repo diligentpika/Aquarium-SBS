@@ -110,14 +110,52 @@
     75% {left: 25%; top: 340px; transform: scaleX(-1) rotate(5deg);}
     100% {left: -100px; top: 300px; transform: scaleX(-1);}
 }
+		</style>
+		<script>
+			var icount=0;
+			function changeSrc() {
+				const audio = document.getElementById("audio");
+				const source = document.getElementById("audiosrc");
+				icount++; 
+				if(icount % 3==0)
+					source.src = "nhac2.mp3";
+				else if (icount%2==0)
+					source.src="Nhac3.mp3";
 
-	</style>
+				else 
+					source.src = "nhac1.mp3";
+				audio.load();
+}			
+			var bg=0
+			function myFunction() {
+			document.getElementById("myDIV").style.backgroundImage = "url(https://img.freepik.com/free-photo/beautiful-underwater-landscape-with-fish-corals_1268-31488.jpg)";
+			bg++;
+			if(bg%3==0)
+			style="background-image: url('https://m.media-amazon.com/images/I/81C8bxbzTrL._AC_UF894,1000_QL80_.jpg');">
+			else if (bg%2==0)
+				style="background-image: url('https://cdn.pixabay.com/video/2022/07/23/125220-732837310_tiny.jpg');">
+			else
+				style="background-image: url('https://www.shutterstock.com/image-illustration/colorful-coral-reef-under-sea-600nw-2043152465.jpg');">
+			
+			}	
+
+	</script>
 </head>
 <body style="background-image:url(https://www.desktopbackground.org/download/1600x900/2012/09/21/456167_25-aquarium-backgrounds_2560x1024_h.jpg); background-size: cover; height: 100%;
 background-repeat: no-repeat;">
+	
 
+<audio controls id="audio" loop autoplay>
+	<source id="audiosrc" src="nhac2.mp3" type="audio/ogg">
+  Your browser dose not Support the audio Tag
+  </audio>
+  
+  <button onclick="changeSrc()">Music</button>
+  <button onclick="myFunction()">Change Background</button>
+  
 <div>
-
+	<div frame= "backframe"></div>
+	<div frame="back-change"></img src="https://img.freepik.com/free-photo/beautiful-underwater-landscape-with-fish-corals_1268-31488.jpg">
     <div id="shark"><img src="https://art.ngfiles.com/comments/245000/iu_245073_5714699.gif"; width="298" height="149"></div>
 	<div id="nemo"><img src="https://media.baamboozle.com/uploads/images/73330/1668605781_17770_gif-url.gif"; width="298" height="149"></div>
 	<div id="purple"><img src="https://static.wixstatic.com/media/00d758_78ad7948db474978bc27933dc9f99dd9~mv2.gif"; width="298" height="149"></div>
